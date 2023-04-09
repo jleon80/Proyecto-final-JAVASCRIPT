@@ -25,7 +25,7 @@ const createCard = (id, type, title, image, releaseDate) => {
   id="${id}" data-type="${type}" class="w-[250px] bg-gray-900 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-sm shadow-gray-800"
 >
   <figure class="">
-    <a href="">
+    <a href="overview.html?view=${id}&type=${type}">
       <img
         class="h-[375px] max-w-full rounded-t-lg"
         src="${image}"
@@ -56,7 +56,7 @@ const createCardFavorites = (id, type, title, image, releaseDate) => {
   id="${id}" data-type="${type}" class="w-[250px] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-sm shadow-gray-800"
 >
   <figure class="">
-    <a href="">
+    <a href="overview.html?view=${id}&type=${type}">
       <img
         class="h-[375px] max-w-full rounded-t-lg"
         src="${image}"
