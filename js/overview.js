@@ -18,7 +18,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then(function (data) {
-      console.log(data)
+      // console.log(data)
       searchType == 'movie' ? document.querySelector(".title").innerHTML = data.title : document.querySelector(".title").innerHTML = data.name
       document.querySelector(".poster-image ").src = BASE_URL_IMG + data.poster_path;
       document.querySelector('.overview-text').innerHTML = data.overview;
@@ -68,9 +68,8 @@ window.document.addEventListener("DOMContentLoaded", function () {
 
       playTrailer.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('abrir')
 
-        modalWindow.style.display = "block";
+        modalWindow.style.display = "flex";
         //to show youtube player on modal window
         const endpointTrailer = `https://api.themoviedb.org/3/${searchType}/${searchQuery}/videos?api_key=${API_KEY}&language=es,en`
 
@@ -80,7 +79,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
 
       const closeWindow = document.querySelector('.close-window');
       closeWindow.addEventListener('click', () => {
-        // const modalWindow = document.querySelector('#modal-window')
         modalWindow.style.display = "none";
       })
 
@@ -111,7 +109,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
 
           // return only the first element of videos. It has not been implemented to be able to see more videos yet
           if (element.type == 'Trailer') {
-            console.log(element.key)
+            // console.log(element.key)
             videoID = element.key
           }
         });
