@@ -80,6 +80,10 @@ window.document.addEventListener("DOMContentLoaded", function () {
       const closeWindow = document.querySelector('.close-window');
       closeWindow.addEventListener('click', () => {
         modalWindow.style.display = "none";
+        // function stop() {
+          // let video = document.getElementById("#iframe-id")
+          // video.contentWindow.postMessage( '{"event":"command", "func":"stopVideo", "args":""}', '*');
+      //  }
       })
 
 
@@ -114,7 +118,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-        const iframeYoutube = `<iframe width="838" height="470" src="https://www.youtube.com/embed/${videoID}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        const iframeYoutube = `<iframe id="iframe-id" width="838" height="470" src="https://www.youtube.com/embed/${videoID}" title="YouTube video player" frameborder="0" allow="accelerometer ; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"; allowfullscreen></iframe>`;
 
         document.querySelector('.youtube-iframe').innerHTML = iframeYoutube;
       })

@@ -125,7 +125,7 @@
 
     <p class="text-center m-5 text-3xl text-white">Detalles</p>
 
-    <article class="container-overview flex justify-center items-center w-full  overflow-hidden md:h-[510px]">
+    <article class="container-overview flex justify-center items-center w-full  md:h-[510px]  space-y-3">
 
       <!-- modal window to display the triler video on youtube  -->
       <div id="modal-window"
@@ -139,37 +139,36 @@
           </div>
           <div class="youtube-iframe">
             <!-- here comes the youtube iframe  -->
-            <h1>pruebas</h1>
           </div>
         </div>
       </div>
 
-      <section class="container m-auto  flex justify-center items-center">
-        <figure class="">
+      <section class="container flex flex-col md:flex-row justify-center items-center space-y-3 pb-3">
+        <figure class="shrink-0 h-[375px] w-[250px] shadow-md shadow-gray-500 rounded-lg">
           <a href="">
-            <img class="poster-image rounded-lg" src="" alt="" />
+            <img class=" poster-image rounded-lg" src="" alt="" />
           </a>
         </figure>
-        <section class="text-white ml-8">
+        <section class="bg-[rgba(0,0,0,0.4)] p-2 text-white mx-3 md:ml-8 rounded-lg">
           <h1 class="title text-3xl font-bold"></h1>
           <h3 class="font-semibold mt-3">Fecha de lanzamiento : <span class="release-date-text font-normal"></span></h3>
           <h3 class="seasons-duration font-semibold">Duración :<span class="runtime-text font-normal"></span> </h3>
           <h3 class="episodes font-semibold"></h3>
-          <ul class="genres-text inline flex list-disc space-x-6">
+          <ul class="genres-text inline flex list-disc  space-x-4 md:space-x-6">
             <span class="font-semibold">Género :</span>
           </ul>
           <h3 class="mt-5 font-bold mb-2 text-xl">Overview</h3>
           <p class="overview-text"></p>
 
           <!-- buttons, play trailer and add to favorites  -->
-          <section class="space-x-4 mt-8">
+          <section class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 my-3">
             <a href="#"
-              class="play-trailer rounded-full border border-[#e50914] px-10 py-3 text-center text-base text-[#e50914] hover:bg-[#e50914] hover:text-white focus:outline-none focus:ring-2 focus:ring-red-800 bg-gray-900">
+              class="play-trailer rounded-full border border-[#e50914] mx-10 py-2 md:px-10 md:py-3 text-center text-base text-[#e50914] hover:bg-[#e50914] hover:text-white focus:outline-none focus:ring-2 focus:ring-red-800 bg-gray-900">
               <i class="text-xl fa-solid fa-play"></i> Play trailer
             </a>
 
             <a href="#"
-              class="add-favorites rounded-full border px-10 py-3 text-center text-base focus:outline-none focus:ring-4 border-gray-700 bg-gray-900 text-white hover:border-white focus:ring-gray-800">
+              class="add-favorites rounded-full border mx-10 py-2 md:px-10 md:py-3 text-center text-base focus:outline-none focus:ring-4 border-gray-700 bg-gray-900 text-white hover:border-white focus:ring-gray-800">
               <i class="text-xl fa-solid fa-heart-circle-plus"></i> Favoritos
             </a>
           </section>

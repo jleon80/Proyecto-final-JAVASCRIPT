@@ -22,7 +22,7 @@ const noResults = (parameter) => {
 // create a CARD with parameters
 const createCard = (id, type, title, image, releaseDate) => {
   return `<article
-  id="${id}" data-type="${type}" class="w-[250px] bg-gray-900 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-sm shadow-gray-800"
+  id="${id}" data-type="${type}" class="w-[250px] bg-gray-900 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-sm shadow-gray-500"
 >
   <figure class="">
     <a href="overview.html?view=${id}&type=${type}">
@@ -53,7 +53,7 @@ const createCard = (id, type, title, image, releaseDate) => {
 // create a CARD with parameters recoverd from local storage, and has a Delete button opcion
 const createCardFavorites = (id, type, title, image, releaseDate) => {
   return `<article
-  id="${id}" data-type="${type}" class="w-[250px] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-sm shadow-gray-800"
+  id="${id}" data-type="${type}" class="w-[250px] transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105  mx-3 my-3 flex max-w-sm flex-col rounded-lg shadow-md shadow-gray-500"
 >
   <figure class="">
     <a href="overview.html?view=${id}&type=${type}">
